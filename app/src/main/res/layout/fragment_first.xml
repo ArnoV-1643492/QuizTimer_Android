@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="0"
+        android:textSize="100sp" />
+
+    <LinearLayout
+        android:id="@+id/btnRow"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/minus20Btn"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="-20"
+            android:textSize="30sp"
+            style="@android:style/ButtonBar"
+            android:background="@color/red"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/playPauseBtn"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="Start"
+            android:textSize="30sp"
+            style="@android:style/ButtonBar"
+            android:background="@color/buttonPrim" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/plus20Btn"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="+20"
+            android:textSize="30sp"
+            style="@android:style/ButtonBar"
+            android:background="@color/red"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>
